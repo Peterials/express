@@ -1,0 +1,39 @@
+<nav class="navbar navbar-inverse bg-faded navbar-static-top ">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
+            </button>
+            <a class="navbar-brand" href="/">Medo</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="categories">
+                <li class="nav-item"><a class="nav-link active" href="#">最新公告</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">导师信息</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">高级查询</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">For Test</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="/test">测试</a></li> -->
+            </ul>
+            <div class="col-sm-3 col-md-3 pull-left">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search" id="srch-term" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-info" type="submit" onclick="onSubmit()">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/me" id="name" class="hide">Welcome, ***</a></li>
+                <li><a href="/admin" id="console" class="hide">控制台</a></li>
+                <li><a href="/users/logout" id="logout" class="hide">登出</a></li>
+                <li><a href="/users/register" id="register" class="hide">注册</a></li>
+                <li><a href="/users/login" id="login" class="hide">登入</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
